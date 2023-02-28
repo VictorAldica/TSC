@@ -24,3 +24,4 @@ git
 4) git config --global credential.helper store
 
 git status
+edit 4 with credentials
