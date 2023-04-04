@@ -53,7 +53,7 @@ module instr_register_test
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
-      @(posedge clk) read_pointer = i;
+      @(posedge clk) randomize_transaction(mode);
       @(negedge clk) print_results;
     end
 
