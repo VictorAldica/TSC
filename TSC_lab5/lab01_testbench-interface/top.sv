@@ -19,7 +19,7 @@ module top;
   operand_t      operand_a, operand_b;
   address_t      write_pointer, read_pointer;
   instruction_t  instruction_word;
-  result_t       result;
+  
 
   // instantiate testbench and connect ports
   instr_register_test test (
@@ -31,8 +31,8 @@ module top;
     .opcode(opcode),
     .write_pointer(write_pointer),
     .read_pointer(read_pointer),
-    .instruction_word(instruction_word),
-    .result(result)
+    .instruction_word(instruction_word)
+   
    );
 
   // instantiate design and connect ports
@@ -45,8 +45,8 @@ module top;
     .opcode(opcode),
     .write_pointer(write_pointer),
     .read_pointer(read_pointer),
-    .instruction_word(instruction_word),
-    .result(result)
+    .instruction_word(instruction_word)
+   
    );
 
   // clock oscillators
